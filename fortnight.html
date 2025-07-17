@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime's Portfolio</title>
+    <link rel="stylesheet" href="fortnight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- React Dependencies -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">@jaimexcarlos</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#CV"> <a href="https://drive.google.com/file/d/1CiLVrXHtMCpr1dXN9YZ6RziimAz64FQB/view?usp=sharing" target="_blank" view class="cta-button">View CV</a></a></li>
+                <li><a href="#home"><svg class="home-icon" width="24" height="24">...</svg></a></li>
+            </ul>
+        </nav>
+        <div class="right-header">
+            <div class="socials">
+                <a href="https://github.com/jaimexcarlos" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/jaimexcarlos/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jaime-carlos-rafer-bb8302208/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="about-image">
+                    <img src="jaime pics/MAIN.JPG" alt="Jaime Carlos 1">
+                </div>
+                <h1>Hi, I'm <span class="typing-text"></span></h1>
+                <p>A BS Information Technology graduate who has a passion for learning new things.</p>
+                <a href="#contact" class="cta-button">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-images">
+                <div class="about-image">
+                    <img src="jaime pics/1.JPG" alt="Jaime Carlos 1">
+                </div>
+                <div class="about-image">
+                    <img src="jaime pics/2.JPG" alt="Jaime Carlos 2">
+                </div>
+                <div class="about-image">
+                    <img src="jaime pics/jaime3.jpg" alt="Jaime Carlos 3">
+                </div>
+            </div>
+            <div class="about-text">
+                <p>I am Jaime Carlos Rafer, a BS Information Technology graduate at De La Salle Lipa with a strong passion for cybersecurity, IT governance, and robotic process automation. My expertise includes security operations, incident response, and risk mitigation, with hands-on experience implementing Wazuh as a SIEM tool in alignment with the NIST framework for a medical supplies distributors company. I was also a student leader who actively contributed to student engagement and academic initiatives, fostering collaboration, teamwork and innovation. With a commitment to leveraging technology for security and efficiency, I aim to create impactful solutions that balance innovation with ethical responsibility in the digital landscape.</p>
+            </div>
+            <div class="awards-list">
+    <h3>Awards & Recognitions</h3>
+    <ul>
+        <li>🎖️ With Academic Distinction</li>
+        <li>🎖️ Rank #1 - BS Information Technology Class of 2025 - De La Salle Lipa </li>
+        <li>🎖️ Best Thesis Awardee – Information Security Track</li>
+        <li>🌟 Outstanding Student Achievement Awardee</li>
+        <li>🌟 Full Scholar - CHED Merit Scholarship Program (CSMP) </li>
+    </ul>
+</div>
+        </div>
+    </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="carousel-container">
+        <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-track">
+            <div class="carousel-item skill-card">
+                <h3>Scripting Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-solid fa-c"></i> 
+                        <span>C++</span>
+                        <div class="skill-level" style="width: 100%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                        <div class="skill-level" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Database Management</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MySQL</span>
+                        <div class="skill-level" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Security Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-solid fa-passport"></i>
+                        <span>SIEM</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-shield"></i>
+                        <span>IDS & IPS</span>
+                        <div class="skill-level" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Operating Systems</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-centos"></i>
+                        <span>CentOS</span>
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-ubuntu"></i>
+                        <span>Ubuntu</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-linux"></i>
+                        <span>Kali <br> Linux</span>
+                        <div class="skill-level" style="width: 65%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows Server 2012</span>
+                        <div class="skill-level" style="width: 55%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>UI/UX Design</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-wix"></i>
+                        <span>Wix</span>
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-icons"></i>
+                        <span>Canva</span>
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Figma</span>
+                        <div class="skill-level" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Robotic Process Automation</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>UiPath</span>
+                        <div class="skill-level" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Enterprise Resource Planning</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-money-check"></i>
+                        <span>Smartbooks</span>
+                        <div class="skill-level" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item skill-card">
+                <h3>Documentation</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-file-word"></i>
+                        <span>MS Word</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Google Docs</span>
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="Wazuh.jpg" alt="Project 1">
+                    <h3>Information Security Incident Response Program <br>
+                     Based on NIST Incident Response Framework with the <br </h3>
+                    <h3> Integration of SIEM for One Agno Medical Solutions </h3> 
+                    <br> 
+                    <p> AWARDED AS BEST THESIS FOR THE INFORMATION SECURITY TRACK</p>
+                    <br>
+                    <p>Designed an Information Security Incident Response <br>
+                    Program for One Agno Medical Solutions, integrating the <br> 
+                    NIST Incident Response Framework with the Wazuh SIEM  <br>
+                    platform to strengthen cybersecurity defenses. The program <br>
+                    includes preparation, detection, containment, eradication, <br>
+                    recovery, and post-incident activities, ensuring a proactive <br>
+                    and systematic response to threats. Additionally, a security <br>
+                     training plan was made to equip employees with essential <br>
+                     cybersecurity skills.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="Parkmate.jpg" alt="Project 2">
+                    <h3>ParkMate: A Mobile-based Application <br> 
+                        for Shared Parking Solutions</h3>
+                        <br>
+                    <p>ParkMate is a proposed tech startup business dedicated to <br>
+                         creating parking solutions through a mobile-based <br>
+                          application. The company aims to address the challenge <br>
+                          of finding parking spaces efficiently and effectively. <br>
+                          With the continuous development of urban areas, the lack <br>
+                          of accessible and safe parking spaces becomes a prevalent <br>
+                           problem that could lead to frustration, wasted time, <br>
+                            and increased carbon emissions due to unnecessary <br>
+                            driving in search of available parking spots. 
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="Uipath.jpg" alt="Project 3">
+                    <h3>Water Depot Automation Using UiPath</h3>
+                    <br>
+                    <p>This project was implemented to a Water Depot Station at <br>
+                        at Tanauan, Batangas. This projects aims to automate the <br>
+                        process, particularly the sales orders and invoices processes <br>
+                        of the aforementioned water depot station. 
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                   <div class="carousel-item certificate">
+                    <img src="certs/cert14.jpg" alt="Operating Systems and You">
+                    <h3>Operating Systems and You: <br> Becoming a Power User</h3>
+                    <p>Issued by Google | June 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert13.jpg" alt="The Bits and Bytes of Computer Networking">
+                    <h3>The Bits and Bytes <br> of Computer Networking</h3>
+                    <p>Issued by Google | May 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert12.jpg" alt="Ask Questions to Make Data-Driven Decisions">
+                    <h3>Ask Questions to <br> Make Data-Driven Decisions</h3>
+                    <p>Issued by Google | April 2025</p>
+                </div>
+                 <div class="carousel-item certificate">
+                    <img src="certs/cert11.jpg" alt="Foundations: Data, Data, Everywhere">
+                    <h3>Foundations: <br> Data, Data, Everywhere</h3>
+                    <p>Issued by Google | April 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert10.jpg" alt="Technical Support Fundamentals">
+                    <h3>Technical Support <br> Fundamentals</h3>
+                    <p>Issued by Google | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert9.jpg" alt="Google Cybersecurity Specialization">
+                    <h3>Google Cybersecurity <br> Specialization</h3>
+                    <p>Issued by Google | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert8.jpg" alt="Put It to Work">
+                    <h3>Put It To Work: <br> Prepare for Cybersecurity <br> Jobs</h3>
+                    <p>Issued by Google | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert8.jpg" alt="Automate with Python">
+                    <h3>Automate Cybersecurity <br> Tasks with Python</h3>
+                    <p>Issued by Google | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert7.jpg" alt="Intro to HTML, CSS, JS">
+                    <h3>Introduction to HTML, CSS, <br> & JavaScript</h3>
+                    <p>Issued by IBM | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert6.jpg" alt="Sound the Alarm">
+                    <h3>Sound the Alarm: <br> Detection and Response</h3>
+                    <p>Issued by Google | February 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert5.jpg" alt="Assets, Threats, and Vulnerabilities">
+                    <h3>Assets, Threats, <br> and Vulnerabilities</h3>
+                    <p>Issued by Google | January 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert4.jpg" alt="Tools of the Trade">
+                    <h3>Tools of the Trade: <br> Linux and SQL </h3>
+                    <p>Issued by Google | January 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert3.jpg" alt="Connect and Protect">
+                    <h3>Connect and Protect: <br> Networks and Network
+                        Security</h3>
+                    <p>Issued by Google | January 2025</p>
+                </div> 
+                <div class="carousel-item certificate">
+                    <img src="certs/cert2.jpg" alt="Play It Safe">
+                    <h3>Play It Safe: <br> Manage Security Risks</h3>
+                    <p>Issued by Google | January 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/cert1.jpg" alt="Foundations of Cybersecurity">
+                    <h3>Foundations of Cybersecurity</h3>
+                    <p>Issued by Google | January 2025</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/sigma.jpg" alt="Lean Six Sigma White Belt">
+                    <h3>Lean Six Sigma White Belt </h3>
+                    <p>Issued by Management & <br> Strategy Institute | December 2024</p>
+                </div>
+                <div class="carousel-item certificate">
+                    <img src="certs/smartbooks.jpg" alt="Smartbooks">
+                    <h3>Smartbooks And Power BI: <br> Basic with Analytics</h3>
+                    <p>Issued by FIT Academy | January 2024</p>
+                </div>
+            </div>
+            <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section">
+        <h2>Student Leadership</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                <div class="carousel-item leadership">
+                    <img src="leadership/VG.jpg" alt="Vice Governor">
+                    <h3>Vice Governor <br> DLSL Student Government - CITE Council <br> AY. 2024-2025 </h3>
+                    <p>The role reported directly to the Governor and <br>
+                         coordinated with proper school authorities regarding <br>
+                          activity-related grievances, sentiments, and  <br>
+                          suggestions. It also worked closely with the DLSL-SG <br>
+                          Executive Council in monitoring, evaluating, and <br>
+                          improving policies affecting students’ concerns, <br>
+                          rights, and welfare. </p>
+                    <br>
+                </div>
+                <div class="carousel-item leadership">
+                    <img src="leadership/PC.JPG" alt="IT Program Coordinator">
+                    <h3>Program Coordinator for Information Technology <br> DLSL Student Government - CITE Council <br> AY. 2023-2024 </h3>
+                    <p>
+                        The role reported directly to the Vice Governor and <br>
+                        presided over the Council of Class Leaders. It served <br>
+                        as the direct link between the DLSL-SG and the student <br>
+                        body, gathering student interests, sentiments, <br>
+                        grievances, complaints, and suggestions. 
+                    </p>
+                </div>
+                <div class="carousel-item leadership">
+                    <img src="leadership/VP-IT.JPG" alt="Vice President for Information Technology">
+                    <h3>Vice President for Information Technology <br> Junior Philippine Computer Society (JPCS) <br> - DLSL Chapter AY. 2022-2023 </h3>
+                    <p>
+                        The role supported the President in achieving the <br>
+                        organization’s objectives and implementing its <br>
+                        programs and activities. It reported directly to <br>
+                        the President, developed policies within its scope <br>
+                         of control, and interpreted situations that arose <br>
+                         within the organization. 
+                    </p>
+                </div>
+                <div class="carousel-item leadership">
+                    <img src="leadership/REP-IT.jpg" alt="1st Year Representative for Information Technology">
+                     <h3>1st Year Representative for Information Technology <br> Junior Philippine Computer Society (JPCS) <br> - DLSL Chapter AY. 2021-2022 </h3>
+                    <p>
+                        The role involved representing and serving as a bridge <br>
+                        between members of different year levels and the <br>
+                        executive board, ensuring that members’ concerns <br>
+                         were voiced while upholding their rights as part <br>
+                        of JPCS. 
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Let's Connect!</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> jaimecarlos.rafer08@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +639471092918</p>
+                <p><i class="fa-solid fa-house"></i> Talisay, Batangas, 4220</p>
+                <div class="contact-socials">
+                    <a href="https://github.com/jaimexcarlos" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/jaimexcarlos/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jaime-carlos-rafer-bb8302208/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">▲</button>
+    
+    <!-- Scripts -->
+    <script src="fortnight.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(
+            <RecommendationForm />,
+            document.getElementById("recommendation-form-container")
+        );
+    </script>
+</body>
+</html>
